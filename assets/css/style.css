@@ -27193,10 +27193,31 @@ body.newsletter-success-open {
   }
 }
 
-/* Hero eyebrow — hidden on desktop (About, Explore, Vision, Get Involved, Partners, FAQ, etc.) */
+/* Hero eyebrow — hidden on desktop except Home and About */
 @media (min-width: 1024px) {
   .page-hero:not(.home-hero) .hero-label,
   .page-hero:not(.home-hero) [class*='__eyebrow'] {
+    display: none !important;
+  }
+
+  .about-page .page-hero.about-hero .hero-label {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 0.7rem !important;
+    font-family: var(--font-body);
+    font-size: clamp(0.78rem, 0.95vw, 0.92rem);
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--color-pink);
+  }
+
+  .about-page .page-hero.about-hero .hero-label::before,
+  .about-page .page-hero.about-hero .hero-label::after {
+    content: none !important;
     display: none !important;
   }
 }
