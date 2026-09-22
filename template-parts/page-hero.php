@@ -189,6 +189,7 @@ $image_class   = trim( 'lazy-img ' . (string) $hero['image_class'] );
             <div class="<?php echo esc_attr( $actions_class ); ?>">
               <?php if ( $has_primary ) : ?>
               <a class="btn btn--solid btn--lg btn-hover" href="<?php echo esc_url( $primary_url ); ?>"<?php echo bdc_acf_link_target_attr( $primary_link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+                <?php echo esc_html( $hero['primary_cta_text'] ); ?>
                 <?php if ( ! empty( $hero['primary_cta_show_icon'] ) ) : ?>
                 <svg
                   class="btn__icon home-hero__cta-icon"
@@ -197,15 +198,14 @@ $image_class   = trim( 'lazy-img ' . (string) $hero['image_class'] );
                   height="20"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="1.8"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                   aria-hidden="true"
                 >
-                  <circle cx="12" cy="12" r="9.1" />
-                  <circle cx="12" cy="9.2" r="2.35" />
-                  <path d="M7.35 17.05c1.15-2.05 2.7-3.05 4.65-3.05s3.5 1 4.65 3.05" />
+                  <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
                 <?php endif; ?>
-                <?php echo esc_html( $hero['primary_cta_text'] ); ?>
               </a>
               <?php endif; ?>
               <?php if ( $has_secondary ) : ?>

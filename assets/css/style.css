@@ -1773,6 +1773,19 @@ button {
   background-color: #fff;
 }
 
+.home-hero .hero-label {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.7rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.78rem, 0.95vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--color-pink);
+}
+
 .home-hero .hero-headline,
 .home-hero__title {
   display: flex;
@@ -1793,11 +1806,11 @@ button {
 }
 
 .home-hero__title-bright {
-  color: var(--color-pink);
+  color: var(--color-navy);
 }
 
 .home-hero__title-dreamers {
-  color: var(--color-navy);
+  color: var(--color-pink);
 }
 
 .home-hero__title-star {
@@ -1823,6 +1836,22 @@ button {
 
 .home-hero__tagline-word {
   color: var(--color-navy);
+}
+
+.home-hero__tagline-word--dream {
+  color: #2f80ed;
+}
+
+.home-hero__tagline-word--create {
+  color: var(--color-green);
+}
+
+.home-hero__tagline-word--grow {
+  color: var(--color-orange);
+}
+
+.home-hero__tagline-word--give {
+  color: var(--color-plane);
 }
 
 .home-hero__tagline-dot {

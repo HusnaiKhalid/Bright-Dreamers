@@ -36,6 +36,13 @@ acf_add_local_field_group(
 				'default_value' => 'Bright Dreamers — Dream, Create, Grow, Give',
 			),
 			array(
+				'key'           => 'field_home_hero_eyebrow',
+				'label'         => 'Eyebrow',
+				'name'          => 'home_hero_eyebrow',
+				'type'          => 'text',
+				'default_value' => 'Welcome to Bright Dreamers',
+			),
+			array(
 				'key'           => 'field_home_hero_title_bright',
 				'label'         => 'Title line 1',
 				'name'          => 'home_hero_title_bright',
